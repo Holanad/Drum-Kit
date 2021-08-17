@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>JS Drum Kit</title>
+</head>
+<body>
+    <div class="notes">
+        <div data-key="81" class="note">
+            <kbd>Q</kbd>
+            <span class="sound">Now you</span>
+        </div>
+        <div data-key="87" class="note">
+            <kbd>W</kbd>
+            <span class="sound">Everywhere</span>
+        </div>
+        <div data-key="69" class="note">
+            <kbd>E</kbd>
+            <span class="sound">La dah dee</span>
+        </div>
+        <div data-key="82" class="note">
+            <kbd>R</kbd>
+            <span class="sound">La dee dah</span>
+        </div>
+        <div data-key="84" class="note">
+            <kbd>T</kbd>
+            <span class="sound">Gonna be</span>
+        </div>
+        <div data-key="89" class="note">
+            <kbd>Y</kbd>
+            <span class="sound">Superstar</span>
+        </div>
+        <div data-key="85" class="note">
+            <kbd>U</kbd>
+            <span class="sound">Be the girl</span>
+        </div>
+        <div data-key="73" class="note">
+            <kbd>I</kbd>
+            <span class="sound">You used to know</span>
+        </div>
+        <div data-key="79" class="note">
+            <kbd>O</kbd>
+            <span class="sound">Playing on</span>
+        </div>
+        <div data-key="80" class="note">
+            <kbd>P</kbd>
+            <span class="sound">The radio</span>
+        </div>
+    </div>
+    <video autoplay muted="muted" loop="loop">
+        <source src="assets/video/background.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    </video>
+    <audio data-key="81" src="assets/sound/1.wav"></audio>
+    <audio data-key="87" src="assets/sound/2.wav"></audio>
+    <audio data-key="69" src="assets/sound/3.wav"></audio>
+    <audio data-key="82" src="assets/sound/4.wav"></audio>
+    <audio data-key="84" src="assets/sound/5.wav"></audio>
+    <audio data-key="89" src="assets/sound/6.wav"></audio>
+    <audio data-key="85" src="assets/sound/7.wav"></audio>
+    <audio data-key="73" src="assets/sound/8.wav"></audio>
+    <audio data-key="79" src="assets/sound/9.wav"></audio>
+    <audio data-key="80" src="assets/sound/10.wav"></audio>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
