@@ -9,11 +9,24 @@ html {
     padding: 0;
     font-family: sans-serif;
   }
-  
+  body{
+    height: 100vh;
+  }
+  .music-block{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+  }
+  .music-block h1{
+    color: #fff;
+    font-size: 3rem;
+  }
   .notes {
     display: flex;
     flex: 1;
-    min-height: 100vh;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
@@ -25,15 +38,16 @@ html {
     font-size: 1.5rem;
     padding: 1rem .5rem;
     transition: all 1.2s;
-    width: 10rem;
+    width: 8rem;
     text-align: center;
-    color: white;
+    color: #fff;
     background: rgba(0,0,0,0.4);
     text-shadow: 0 0 .5rem black;
-    height: 90px;
+    height: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
   }
   
   .playing {
@@ -44,12 +58,12 @@ html {
   
   kbd {
     display: block;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 5px;
   }
   
   .sound {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
     color: #ffc600;
@@ -58,9 +72,25 @@ html {
   video{
       position: absolute;
       z-index: -1;
-      top: -20px;
+      top: 0;
       left: 0;
       width: 100%;
-      transform: scale(1.6);
+    
   }
- 
+  .music-btn{
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .music-btn p {
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    color: #ffc600;
+    padding-left: 15px;
+  }
+  .disable{
+    pointer-events: none;
+    opacity: 0.7;
+  }
