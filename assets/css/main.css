@@ -21,6 +21,7 @@ html {
   }
   .music-block h1{
     color: #fff;
+    text-align: center;
     font-size: 3rem;
   }
   .notes {
@@ -92,4 +93,16 @@ html {
   .disable{
     pointer-events: none;
     opacity: 0.7;
+  }
+  @media(max-width: 576px){
+    .note{
+      width: 5rem;
+      height: 50px;
+    }
+    kbd{
+      font-size: 2rem;
+    }
+    .sound{
+      font-size: 0.6rem;
+    }
   }
