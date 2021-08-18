@@ -1,16 +1,13 @@
 html {
     font-size: 10px;
     background-size: cover;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   
   body,html {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-  }
-  body{
-    height: 100vh;
   }
   .music-block{
     min-height: 80vh;
@@ -71,11 +68,14 @@ html {
     margin-top: 10px;
   }
   video{
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
+      position: fixed;
+      right: 0;
+      bottom: 0;
       min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -9999;
   }
   .music-btn{
     display: flex;
@@ -83,6 +83,10 @@ html {
     border: none;
     background: none;
     cursor: pointer;
+    margin-top: 20px;
+  }
+  .music-btn:active{
+    border: none;
   }
   .music-btn p {
     font-size: 1.3rem;
