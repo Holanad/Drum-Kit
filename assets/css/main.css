@@ -3,7 +3,35 @@ html {
     background-size: cover;
     overflow-x: hidden;
   }
-  
+  .music{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .music-item{
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all 1.2s;
+    text-align: center;
+    color: #fff;
+    width: 110px;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .music-img img{
+    width: 30px;
+    height: 30px;
+  }
+  .music-text{
+    margin: 10px 0 0 0;
+  }
   body,html {
     margin: 0;
     padding: 0;
@@ -97,6 +125,11 @@ html {
   .disable{
     pointer-events: none;
     opacity: 0.7;
+  }
+  .active {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
   }
   @media(max-width: 576px){
     .note{
